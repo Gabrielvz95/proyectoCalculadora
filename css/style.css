@@ -1,0 +1,62 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del encabezado */
+header {
+    height: 100px;
+    background-color: #333; /* Cambia el color de fondo al color que prefieras */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+/* Estilo del cuerpo principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Redujimos un poco el margen superior */
+}
+
+/* Estilo de la calculadora */
+#contenedor-calculadora {
+    background-color: #f0f0f0; /* Cambia el color de fondo al color que prefieras */
+    width: 300px; /* Redujimos el ancho para un aspecto más compacto */
+    padding: 20px; /* Añadimos un poco de espacio alrededor de la calculadora */
+    border-radius: 10px; /* Añadimos esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadimos sombra */
+}
+
+#calculadora {
+    display: grid; /* Cambiamos a un diseño de cuadrícula para una disposición ordenada */
+    grid-template-columns: repeat(4, 1fr); /* Dividimos en 4 columnas iguales */
+    gap: 10px; /* Añadimos espacio entre botones */
+    justify-items: center; /* Centramos los elementos horizontalmente */
+    align-items: center; /* Centramos los elementos verticalmente */
+}
+
+.botones {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc; /* Cambia el color de fondo al color que prefieras */
+    border: none;
+    border-radius: 5px; /* Añadimos esquinas redondeadas a los botones */
+    font-size: 1.2em; /* Tamaño de fuente un poco más grande */
+    cursor: pointer; /* Cambiamos el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el cursor */
+}
+
+/* Cambio de color al pasar el cursor por encima */
+.botones:hover {
+    background-color: #aaa; /* Cambia el color al pasar el cursor */
+}
